@@ -1,0 +1,56 @@
+#habilidades {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#habilidades svg,
+#habilidades img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+    margin: 0 auto 1em auto;
+    width: fit-content;
+}
+
+p {
+    width: 300px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto 1.5em auto;
+    font-weight: 600;
+    font-family: "Public Sans", serif;
+    color: white;
+}
+
+@media (max-width: 425px) {
+    h1 {
+        text-align: center;
+    }
+}
+
+.dark-mode svg {
+    fill: white;
+}
+
+.dark-mode img {
+    filter: invert(1);
+}
+
+.dark-mode header svg {
+    fill: black;
+}   

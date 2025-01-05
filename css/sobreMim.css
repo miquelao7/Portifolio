@@ -1,0 +1,49 @@
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 225px;
+    margin-right: 3em;
+    object-fit: cover;
+    object-position: 30% 60%;
+}
+
+main {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1em;
+    width: fit-content;
+}
+
+p {
+    width: 300px;
+    font-size: 20px;
+    margin-right: 1.25em;
+    font-weight: 600;
+    font-family: "Public Sans", serif;
+    color: white;
+}
+
+@media (max-width: 425px) {
+    p {
+        margin: 0;
+    }
+}
+
+.dark-mode header svg {
+    fill: black;
+}

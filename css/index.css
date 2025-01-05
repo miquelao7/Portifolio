@@ -1,0 +1,120 @@
+header {
+    padding: 1em .5em;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-align: left;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 215px;
+    margin-right: 3em;
+    object-fit: cover;
+    object-position: 30% 60%;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main div,
+h1,
+h2 {
+    width: fit-content;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 1.24em;
+    font-weight: 400;
+}
+
+h1 span,
+#texto-digitar-2 {
+    color: rgb(72, 117, 199);
+    font-weight: 800;
+}
+
+#cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+#cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
+
+@media (max-width: 425px) {
+    main>div {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    main img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    header ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+}
